@@ -1,0 +1,28 @@
+{
+    "name": "清除广告插件",
+    "version": "1.0",
+    "description": "用于清除页面广告",
+    "author": "shizf",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    //匹配待注入页面并注入相应的css和js
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*"
+            ],
+            "css": [
+                "inject.css"
+            ],
+            "js": [
+                "inject.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "http://*/*"
+    ]
+}

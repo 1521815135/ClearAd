@@ -1,0 +1,29 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+}
+
+#head {
+    font: 24px blue;
+}
+
+#content div{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+#content div:hover{
+    cursor:hand;
+    background-color: blueviolet;
+    font-size: 16px;
+}
+#btn_get{
+    border: 1px solid green;
+    width: 120px;
+    height: 20px;
+}
+        
